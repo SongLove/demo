@@ -2,14 +2,27 @@
  * Created by Administrator on 2017/7/16.
  */
 $(function () {
+    /*页面图片轮播*/
+    var timebj=0;
+    var arrbj=["b"];
+    var s=["time1.jpg","time2.jpg","time3.jpg","time4.jpg"];
+    $("#section0").css("background-image","url("+s[0]+")");
+    setInterval(function () {
+            $("#section0").css("background-image","url("+s[timebj]+")");
+            timebj++;
+            if(timebj>=4){
+                timebj=0;
+            }
+    },2000);
+
     //导航条显示
     $("#more").bind("click",function () {
         $(".fix").stop().slideToggle(300);
-    })
+    });
     window.onscroll = function () {
         var bdscrollTop = document.documentElement.scrollTop || document.body.scrollTop;
         //console.log(bdscrollTop);
-        if(bdscrollTop > 0){
+        if(bdscrollTop > 700){
             $("#nav-fix").addClass("fixed-nav");
         }else{
             $("#nav-fix").removeClass("fixed-nav");
