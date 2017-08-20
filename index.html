@@ -26,8 +26,23 @@
 <div class="content">
     <!--轮播部分-->
     <div id="bj-container">
-        <div id="section0" class="section">
-
+        <div id="section0">
+            <div id="welcome">
+                <div id="welcome-my">
+                    <p class="p1" style="letter-spacing: 1px">Welcome! ! !</p>
+                    <p class="p2">欢迎来到我的个人简介,感谢阅读!</p>
+                </div>
+                <div id="btn-my">
+                    <span class="btn-my" id="btn-my1">关于我</span>
+                    <span class="btn-my" id="btn-my2">我的作品</span>
+                </div>
+            </div>
+            <ul class="bj-img">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
         </div>
     </div>
     <!--tangtonsong导航-->
@@ -60,11 +75,23 @@
         <hr>
         <div class="container active-div text-center" >
                 <div class="row">
-                    <div class="col-lg-3">
+                    <div class="col-lg-12">
+                        <!--头像-->
+                        <div id="my-head"></div>
+                        <h3 class="my">一步步高升,一步步追梦,渴望不断上升，变得更伟大而高贵。</h3>
+                        <hr style="width: 80%;height: 1px; background: #5e5e5e;margin-bottom: 40px  ">
+                        <div class="text-center" style="width: 60% ;margin: 0 auto;margin-top: 20px">
+
+                            <div style="font-size: 16px;letter-spacing: 1px">
+                                <p style="font-size: 18px;margin-bottom: 10px;font-weight: 600">我叫唐桐宋</p>
+                                <span>踏入Web前端这块领域,势要做到万人之上。
+                                本着初心,对技术的热衷和追求极致的我,决定将自己今后的事业投身至此。
+                                本人有良好的代码编写意思，以及部分的项目经验。学习能力强，对新技术的专研
+                                ，乐于去研究。
+                                </span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-lg-3">2</div>
-                    <div class="col-lg-3">3</div>
-                    <div class="col-lg-3">4</div>
                 </div>
         </div>
 </div>
@@ -74,6 +101,29 @@
     <div id="section2" class="section">
         <h2>求职意向</h2>
         <hr>
+        <div class="container active-div text-center">
+            <div class="col-lg-12 form-group"><h1>Web前端工程师</h1></div>
+            <div class="col-lg-3 col-xs-6">
+                <img src="images/web.png">
+                <p>页面编写</p>
+                <p>根据UI设计师提供的设计模型，高仿真度的编写页面</p>
+            </div>
+            <div class="col-lg-3 col-xs-6">
+                <img src="images/css.png">
+                <p>JS动态效果</p>
+                <p>实现与用户互动的页面效果，更关注用户体验，编写友好的视觉效果</p>
+            </div>
+            <div class="col-lg-3 col-xs-6">
+                <img src="images/js.png">
+                <p>前后端数据交互</p>
+                <p>调用后端提供的数据接口，进行页面的数据传输，实现前后端数据互通</p>
+            </div>
+            <div class="col-lg-3 col-xs-6">
+                <img src="images/h5.png">
+                <p>手机端页面 </p>
+                <p>使用boostrap响应式框架，实现手机端页面，使用与任何主流手机端</p>
+            </div>
+        </div>
     </div>
     <!--技术掌握-->
     <div id="section3" class="section">
@@ -116,38 +166,50 @@
         <h2>作品集</h2>
         <hr style="margin-bottom: 60px">
         <div class="container active-div text-center" >
-            <p class="lead text-center">平时的一些案例练习,锻炼自己的编写能力，涉及到的技术有JQ JS vue Boostrap等</p>
+            <p class="lead text-center">平时的一些案例练习,锻炼自己的编写能力，涉及到的技术有JQ JS vue Boostrap,angular等</p>
             <div class=" text-center" id="demo">
                 <div class="col-lg-3 col-xs-6">
                     <div class="relative">
                         <img width="100%" src="images/01.jpg">
-                        <div class="demo">
-                            <a>作品</a>
-                        </div>
+                        <a href="demo/vue/seo.html" target="_blank" class="my-demo">
+                            <div class="demo ">
+                                <p>Vue 异步请求</p>
+                                <p>请求百度搜索接口，实现搜索下拉，进行百度搜索</p>
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-xs-6">
                     <div class="relative">
                         <img width="100%" src="images/02.jpg">
-                        <div class="demo">
-                            <a>作品</a>
-                        </div>
-                    </div>>
+                        <a href="demo/vue/shopp.html" target="_blank" class="my-demo">
+                            <div class="demo">
+                                <p>Boostrap 购物车</p>
+                                <p>使用Boostrap框架快速搭建精美页面，通过vue数据绑定操作商品</p>
+                            </div>
+                        </a>
+                    </div>
                 </div>
                 <div class="col-lg-3 col-xs-6">
                     <div class="relative">
                         <img width="100%" src="images/03.jpg">
-                        <div class="demo">
-                            <a>作品</a>
-                        </div>
+                        <a class="my-demo">
+                            <div class="demo">
+                                <p>AngularJs 仿QQ手机端</p>
+                                <p>使用angular 路由实现多视图的单页页面，加上响应式模仿QQ App</p>
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-xs-6">
                     <div class="relative">
                         <img width="100%" src="images/04.jpg">
-                        <div class="demo">
-                            <a>作品</a>
-                        </div>
+                        <a href="https://songlove.github.io/" target="_blank" class="my-demo">
+                            <div class="demo">
+                                <p>淘宝首页</p>
+                                <p>高度还原淘宝首页，精美的布局，与丰富的交互效果</p>
+                            </div>
+                        </a>
                     </div>
                 </div>
 
@@ -163,25 +225,25 @@
             <ul class="jingli-ul">
                 <li>
                     <div class="myBox text-center">
-                        <p>04/2017</p>
+                        <p>06/2016</p>
                         <p>-</p>
-                        <p>现在</p>
+                        <p>06/2017</p>
                     </div>
                     <div class="myBox-text text-right">
-                        <h3>南昌思诚科技有限公司</h3>
-                        <p>进行系统的编码培训</p>
-                        <p>每周进行学习成果测试，与导师会面进行技术提问</p>
-                        <p>多次开展项目实战编写</p>
+                        <h3>南昌云启技术有限公司</h3>
+                        <p>负责公司接手的页面开发</p>
+                        <p>负责公司前，后期的页面维护和优化界面</p>
+                        <p>根据设计图用前端技术呈现丰富的交互效果</p>
                     </div>
                 </li>
                 <li>
                     <div class="myBox text-center">
-                        <p>06/2018</p>
+                        <p>06/2017</p>
                         <p>-</p>
-                        <p>09/2015</p>
+                        <p>09/2013</p>
                     </div>
                     <div class="myBox-text text-left" style="float:right">
-                        <h3>江西科技学院</h3>
+                        <h3>江西师范大学</h3>
                         <h4>大学本科</h4>
                         <p>专业考证：计算机网页设计证书，软件测试工程师</p>
                         <p>荣誉奖状：被评为三好学生，优秀班干部</p>
@@ -194,6 +256,22 @@
     <div id="section6" class="section">
         <h2>联系我</h2>
         <hr>
+        <div style="font-size: 18px;font-weight: 500" class="container active-div text-center">
+            <p>注重效率,偏爱敏捷开发</p>
+            <p>喜欢尝试,期待新鲜事物</p>
+            <p>前端即兴趣,兴趣即未来</p>
+            <p>带上我吧,一起看到更大的世界</p>
+            <p>Email：584493299@qq.com</p>
+            <div class="text-center" style="margin-top: 80px">
+                <a href="https://github.com/SongLove" target="_blank" class="my-call">
+                    <img style="width: 50px;height: 50px" src="images/s_github.svg">
+                </a>
+                <a href="https://weibo.com/u/5134232689" target="_blank" class="my-call">
+                    <img style="width: 50px;height: 50px" src="images/s_wb.svg">
+                </a>
+            </div>
+        </div>
+
     </div>
 </div>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
